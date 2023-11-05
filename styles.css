@@ -19,18 +19,20 @@ label {
 }
 
 input {
+    cursor: pointer;
     appearance: none;
     border-radius: 3px;
 }
 
 input:invalid {
-   
+    cursor: pointer;
     border: 2px solid red;
 }
 
 input:focus:invalid {
     outline: none;
     border: 2px solid red;
+    cursor: pointer;
 }
 
 .error {
