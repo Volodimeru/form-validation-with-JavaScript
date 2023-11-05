@@ -10,12 +10,12 @@
     <form novalidate>
         <label for="email">
             <span>Please enter an email address:</span>
-            <input type="email" name="email" id="email" >
+            <input type="email" name="email" id="email" autocomplete="email" >
             <span class="error" aria-live="polite"></span>
         </label>
          <label for="country">
             <span>Select the Country:</span>
-            <input list="countryList" id="country" name="country"  >
+            <input list="countryList" id="country" name="country" autocomplete="off" >
             <span class="error" aria-live="polite"></span>
             <datalist id="countryList">
                 <option value="France"></option>
@@ -27,7 +27,7 @@
    
         <label for="zipCode">
             <span>Zip Code</span>
-            <input type="text" name="zipCode" id="zipCode" >
+            <input type="text" name="zipCode" id="zipCode" autocomplete="off">
             <span class="error" aria-live="polite" ></span>
         </label>
         <label for="password">
