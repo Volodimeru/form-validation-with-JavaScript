@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+form, p {
+    margin: 50px auto;;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font: 1em sans-serif;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    appearance: none;
+    border-radius: 3px;
+}
+
+input:invalid {
+   
+    border: 2px solid red;
+}
+
+input:focus:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+.error {
+    width: 100%;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+}
+
+.error.active {
+    padding: 0.3em;
+}
